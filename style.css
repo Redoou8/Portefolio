@@ -187,13 +187,13 @@ div {
 
 }
 
-.itemTitle-1:hover + .it1-1  {
+/*.itemTitle-1:hover + .it1-1  {
 
-    
+    opacity: 0;
     transform: translateY(-30px);
     animation: apparition 0.5s 0s ease-out forwards;
 
-}
+}*/
 
 
 .itemTitle-1:hover + .it1-2  {
