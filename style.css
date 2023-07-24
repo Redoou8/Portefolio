@@ -1,0 +1,217 @@
+
+
+body {
+  
+background-attachment: fixed;
+background-color: #121711;
+background-image: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100%;
+}
+
+
+h1{
+
+font: 4em sans-serif;
+
+}
+h3{
+
+    font: 2em sans serif;
+}
+
+
+
+#topTitle {
+    color: #ffffff;
+    font: 1.5em sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: apparition 0.4s 1s ease-out forwards; 
+    
+
+}
+
+#MainSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding : 2% 10% 10% 5%;
+    justify-content: space-around;
+}
+
+
+#p1{
+
+    font: 2em sans-serif;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: apparition 0.4s 1.2s ease-out forwards, pulse 3s 1s infinite ease-in-out alternate;
+    
+}
+
+  @keyframes pulse {
+    from { transform: scale(0.95); }
+    to { transform: scale(1.05); }
+  }
+
+
+
+  .itemTitle-1{
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: apparition 1s 2s ease-out forwards;  
+
+}
+ 
+.itemTitle-2{
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: apparition 1s 2.5s ease-out forwards;  /* temps d'animation / delai */
+
+}
+
+
+
+.itemTitle-3{
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: apparition 1s 3s ease-out forwards;
+
+}
+
+.itemTitle-4{
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: apparition 1s 3.5s ease-out forwards;
+}
+
+
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background :none;
+    color: #ebe6e6;
+    padding: 0;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+   
+}
+
+
+
+
+
+
+
+img {
+    
+    width:200px;
+    max-width :200px;
+    
+    
+
+}
+
+.contact {
+
+    display: flex;
+    font: 3em sans-serif  white;
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+div {
+
+    font-size: 10px;
+    font-style: italic;
+
+
+}
+
+
+}
+
+@media screen and (max-width: 1024px){
+
+div {
+
+    font-size: 15px;
+    font-style: italic;
+
+
+}}
+
+@keyframes apparition {
+
+    100% {
+        opacity: 1;
+        transform: none;
+
+    }
+
+
+}
+
+* {
+    cursor:default;
+    
+}
+
+
+
+
+
+/* Apparition CSS de chaque ligne d'item onhover*/
+
+
+.it1-1, .it1-2, .it1-3,.it1-4, .it1-5  {
+
+ opacity: 0;
+
+}
+
+.itemTitle-1:hover + .it1-1  {
+
+    
+    transform: translateY(-30px);
+    animation: apparition 0.5s 0s ease-out forwards;
+
+}
+
+
+.itemTitle-1:hover + .it1-2  {
+
+    
+    transform: translateY(-30px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+
+}
+
+.itemTitle-1:hover + {
+    
+    transform: translateY(-30px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+
+}
+
+footer{
+    position: static;
+    font: 1em white sans-serif;
+}
