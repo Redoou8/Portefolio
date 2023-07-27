@@ -1,4 +1,8 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
+ 
+
   function toggleElements(itemTitleElement, elementsToToggle) {
     // If animation is in progress, return and ignore the click
     if (itemTitleElement.isAnimating) {
@@ -19,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             itemTitleElement.visibleElements = !itemTitleElement.visibleElements; // Toggle the visibility state for the next click
           }
         }, delay);
-        delay += 200; // Add 0.5 seconds delay for each element (adjust as needed)
+        delay += 200; // Add 0.2 seconds delay for each element (adjust as needed)
       }
     } else {
       // If elements are hidden, show them one by one in their original order
@@ -44,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   itemTitle1.isAnimating = false;
   const elementsToToggle1 = Array.from(itemTitle1.parentElement.children).slice(1);
 
-  itemTitle1.addEventListener('click', function () {
+  itemTitle1.addEventListener('mousedown' , function () {
     toggleElements(itemTitle1, elementsToToggle1);
   });
 
@@ -53,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
   itemTitle2.isAnimating = false;
   const elementsToToggle2 = Array.from(itemTitle2.parentElement.children).slice(1);
 
-  itemTitle2.addEventListener('click', function () {
+  itemTitle2.addEventListener('mousedown', function () {
     toggleElements(itemTitle2, elementsToToggle2);
   });
 
@@ -62,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   itemTitle3.isAnimating = false;
   const elementsToToggle3 = Array.from(itemTitle3.parentElement.children).slice(1);
 
-  itemTitle3.addEventListener('click', function () {
+  itemTitle3.addEventListener('mousedown', function () {
     toggleElements(itemTitle3, elementsToToggle3);
   });
 
@@ -71,7 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
   itemTitle4.isAnimating = false;
   const elementsToToggle4 = Array.from(itemTitle4.parentElement.children).slice(1);
 
-  itemTitle4.addEventListener('click', function () {
+  itemTitle4.addEventListener('mousedown', function () {
     toggleElements(itemTitle4, elementsToToggle4);
   });
+
+
 });

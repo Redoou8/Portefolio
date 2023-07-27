@@ -12,12 +12,13 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    font-family: 'Faustina', serif;
   }
 
 
 h1{
 
-font: 3em white sans-serif;
+font: 3em;
 
 }
 
@@ -31,9 +32,12 @@ font: 3em white sans-serif;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1s ease-out forwards; 
-    
+    padding-bottom: 2%;
 
 }
+
+
+
 
 #MainSection {
     
@@ -41,11 +45,10 @@ font: 3em white sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding : 2% 10% 10% 5%;
+    
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    
+    height: 60%;
    
 }
 
@@ -88,9 +91,10 @@ input{display: none;}
     color: rgb(187, 90, 12) ;
 }
 
-.it1-1,.it1-2, .it1-3, .it1-4, .it1-5, .it1-6, {
-align-content: center;
-opacity: 1;}
+.it1-1,.it1-2, .it1-3, .it1-4, .it1-5, .it1-6 {
+align-content : center;
+opacity: 1;
+}
 
  
 .itemTitle-2{
@@ -142,9 +146,9 @@ opacity: 1;}
     position: relative;
     display :flex;
     flex-direction: column;
-    
+    gap: 20px;
     background: none;
-    overflow: hidden;
+   
     align-items: center;
     border: none;
     
@@ -184,7 +188,7 @@ img {
 
 .footer{
     position: relative;
-    display:flex;*
+    display:flex;
     width : 100%;
     
 }
@@ -194,7 +198,7 @@ img {
     position: static;
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: rgb(138, 43, 43);
     color: white;
     bottom: 0;
    align-items: center;
