@@ -1,6 +1,7 @@
 
 
 html, body {
+   
     min-height: 100%;
     position: relative;
     background-attachment: fixed;
@@ -17,15 +18,18 @@ html, body {
 
 
 h1{
-
-font: 3em;
-
+    font-family: 'Faustina', serif;
+    font-weight: bold;
+color: #ebded7;
+padding: 0;
+margin: 0;
+ font-size: 5em;
 }
 
 
 #topTitle {
     color: #ffffff;
-    font: 1.5em sans-serif;
+    row-gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +37,28 @@ font: 3em;
     transform: translateY(-100px);
     animation: apparition 0.4s 1s ease-out forwards; 
     padding-bottom: 2%;
+    font-family: 'Faustina', serif;
+    margin-bottom: 4%;
 
 }
 
+.multipleLogo {
+display: flex;
+margin: 0;
+padding: 0;
+width: 3vw;
 
+gap: 0;
 
+}
+.minia {
+            
+            margin: 0;
+            padding: 0;
+            height: 3vh;
+            width: 3vw;
+
+}
 
 #MainSection {
     
@@ -53,13 +74,15 @@ font: 3em;
 }
 
 
-#p1{
-
-    font: 2em sans-serif;
+#job{
+    color: #DC811A;
+    font-size: 3.5em;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1.2s ease-out forwards, pulse 3s 1s infinite ease-in-out alternate;
-    
+    font-style: oblique 25deg;
+    margin: 0;
+    padding: 0;
 }
 
   @keyframes pulse {
@@ -68,7 +91,15 @@ font: 3em;
   }
 
 
-input{display: none;}
+.it1-1{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    column-gap: 20%;
+    text-align: center;
+}
 
 
 
@@ -76,14 +107,17 @@ input{display: none;}
     opacity: 0;
     transform: translateX(-300px);
     animation: apparition 1s 2s ease-out forwards;  
-    font-size: 3em ;
-    
+    font-size: 2em ;
+    padding-bottom: 5%;
+    padding-top: 0;
+    font-weight: bold;
+
 
 }
 
 .itemTitle-1:hover{
 
-    font-size: 4em;
+   
     color: rgb(212, 125, 53);
 }
 .itemTitle-1:active{
@@ -91,54 +125,11 @@ input{display: none;}
     color: rgb(187, 90, 12) ;
 }
 
-.it1-1,.it1-2, .it1-3, .it1-4, .it1-5, .it1-6 {
-align-content : center;
-opacity: 1;
-}
+
+
+
 
  
-.itemTitle-2{
-    opacity: 0;
-    transform: translateX(-300px);
-    animation: apparition 1s 2.5s ease-out forwards;  /* temps d'animation / delai */
-    font-size: 3em ;
-}
-.itemTitle-2:hover{
-
-    font-size: 4em;
-    color: rgb(212, 125, 53);
-}
-.itemTitle-2:active{
-
-    color: rgb(187, 90, 12) ;
-}
-
-.itemTitle-3{
-    opacity: 0;
-    transform: translateX(-300px);
-    animation: apparition 1s 3s ease-out forwards;
-    font-size: 3em ;
-}
-.itemTitle-3:hover{
-
-    font-size: 4em;
-    color: rgb(212, 125, 53);
-}
-.itemTitle-3:active{
-
-    color: rgb(187, 90, 12) ;
-}
-.itemTitle-4{
-    opacity: 0;
-    transform: translateX(-300px);
-    animation: apparition 1s 3.5s ease-out forwards;
-    font-size: 3em ;
-}
-.itemTitle-4:hover{
-
-    font-size: 4em;
-    color: rgb(212, 125, 53);
-}
 
 
 
@@ -146,18 +137,16 @@ opacity: 1;
     position: relative;
     display :flex;
     flex-direction: column;
-    gap: 20px;
-    background: none;
-   
+    background: none; 
     align-items: center;
     border: none;
-    
+   row-gap: 20px;
     color: #ebe6e6;
     padding: 0px;
     margin: 0px;
     width: 20%;
     height: fit-content;
-    
+    font-size: 1.3em;
        
 }
 
@@ -186,19 +175,15 @@ img {
     
 }
 
-.footer{
-    position: relative;
-    display:flex;
-    width : 100%;
-    
-}
+
 
 .contact{
-    width: 100%;
-    position: static;
+    width: 80%;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(138, 43, 43);
+    right: 10%;
+    left: 10%;
+    background-color: rgb(19, 238, 48);
     color: white;
     bottom: 0;
    align-items: center;
@@ -213,16 +198,20 @@ img {
 
 
 
-footer{
+  .itemTitle-1:after {    
     
-    position: fixed;
-    height: auto;
-    background-color: red;
-    bottom: 0px;
-    left: 2%;
-    margin-right: 4%;
-    margin-bottom: 0px;
-    margin-top: 5%;
-    
-}
+    content: ""; 
+    height: 2%;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background-color: white;
+  }
 
+  .itemTitle-1:hover:after { 
+    width: 100%; 
+    left: 0; 
+    background-color:rgb(212, 125, 53) ;
+  }
