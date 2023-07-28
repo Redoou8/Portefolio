@@ -36,9 +36,9 @@ margin: 0;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1s ease-out forwards; 
-    padding-bottom: 2%;
+   
     font-family: 'Faustina', serif;
-    margin-bottom: 4%;
+    
 
 }
 
@@ -80,9 +80,17 @@ gap: 0;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1.2s ease-out forwards, pulse 3s 1s infinite ease-in-out alternate;
-    font-style: oblique 25deg;
+    font-style: oblique 15deg;
+    
     margin: 0;
-    padding: 0;
+    padding: 2%;
+    width: auto;
+    background-image: linear-gradient(45deg, #A94B03,#E1851C, #003B5B,#427A91  );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
   @keyframes pulse {
@@ -111,6 +119,12 @@ gap: 0;
     padding-bottom: 5%;
     padding-top: 0;
     font-weight: bold;
+    background-image: linear-gradient(45deg, #A94B03,#ddb280);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 
 
 }
