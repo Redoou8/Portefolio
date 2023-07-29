@@ -1,6 +1,6 @@
 
 
-html, body {
+ html, .body1 {
    
     min-height: 100%;
     position: relative;
@@ -16,6 +16,31 @@ html, body {
     font-family: 'Faustina', serif;
   }
 
+  
+.body2 {
+
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-color: #121711;
+    background-image: url(RES/pexels-miguel-á-padriñán-19670.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Faustina', serif;
+
+}
+
+
+
+
+
+
+
+
 
 h1{
     font-family: 'Faustina', serif;
@@ -23,7 +48,13 @@ h1{
 color: #ebded7;
 padding: 0;
 margin: 0;
- font-size: 5em;
+ font-size: 4vw;
+ background-image: linear-gradient(45deg, #833f00,#be7f47, #d6a070);
+ background-size: 100%;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
 }
 
 
@@ -36,7 +67,7 @@ margin: 0;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1s ease-out forwards; 
-   
+    
     font-family: 'Faustina', serif;
     
 
@@ -65,7 +96,7 @@ gap: 0;
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     
     justify-content: space-around;
     
@@ -76,7 +107,7 @@ gap: 0;
 
 #job{
     color: #DC811A;
-    font-size: 3.5em;
+    font-size: 2vw;
     opacity: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1.2s ease-out forwards, pulse 3s 1s infinite ease-in-out alternate;
@@ -85,7 +116,7 @@ gap: 0;
     margin: 0;
     padding: 2%;
     width: auto;
-    background-image: linear-gradient(45deg, #A94B03,#E1851C, #003B5B,#427A91  );
+    background-image: linear-gradient(45deg, #833f00,#be7f47, #d6a070);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -115,11 +146,11 @@ gap: 0;
     opacity: 0;
     transform: translateX(-300px);
     animation: apparition 1s 2s ease-out forwards;  
-    font-size: 2em ;
+    font-size: 2vw;
     padding-bottom: 5%;
     padding-top: 0;
     font-weight: bold;
-    background-image: linear-gradient(45deg, #A94B03,#ddb280);
+    background-image: linear-gradient(45deg, #833f00,#be7f47);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -141,7 +172,14 @@ gap: 0;
 
 
 
-
+img{
+    position: relative;
+    display: flex;
+    width: 8vw;
+    border: #EEE solid 0.05vw;
+    border-radius: 49%;
+  
+}
 
  
 
@@ -154,22 +192,18 @@ gap: 0;
     background: none; 
     align-items: center;
     border: none;
-   row-gap: 20px;
+   row-gap: 1vw;
     color: #ebe6e6;
     padding: 0px;
     margin: 0px;
     width: 20%;
     height: fit-content;
-    font-size: 1.3em;
+    font-size: 1vw;
+
        
 }
 
-img {
-    
-    width:200px;
-    max-width :200px;
-    
-}
+
 
 
 
@@ -197,11 +231,17 @@ img {
     display: flex;
     right: 10%;
     left: 10%;
-    background-color: rgb(19, 238, 48);
+    font-size: 1vw;
     color: white;
     bottom: 0;
    align-items: center;
    justify-content: space-around;
+   background-image: linear-gradient(45deg, #085A7C, #a5c6d3);
+ background-size: 100%;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
 }
 
 .itemHidden {
@@ -221,7 +261,7 @@ img {
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-    background-color: white;
+    background-color:rgb(212, 125, 53) ;
   }
 
   .itemTitle-1:hover:after { 
