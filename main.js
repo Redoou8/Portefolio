@@ -44,10 +44,37 @@ function toggleElements(itemTitleElement, elementsToToggle) {
 
 
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const itemTitles = document.querySelectorAll('.itemTitle-1');
      
+
+  const darkLightButton = document.querySelector('.darkLight');
+  let isDarkMode = false;
+
+
+
+
+   darkLightButton.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    const newBackgroundURL = isDarkMode ? 'RES/pexels-miguel-á-padriñán-19670.jpg' : 'RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg';
+    darkLightButton.style.backgroundImage = `url(${newBackgroundURL})`;
+    
+    
+    // Toggle body class between body1 and body2
+    const bodyElement = document.body;
+    bodyElement.classList.toggle('body1');
+    bodyElement.classList.toggle('body2');
+  
+  
+  
+  
+  });
+
+
   itemTitles.forEach(itemTitleElement => {
 
     itemTitleElement.visibleElements = true;
@@ -56,13 +83,22 @@ document.addEventListener('DOMContentLoaded', function () {
      toggleElements(itemTitleElement, elementsToToggle);
 
 
+     
+
+
+
     itemTitleElement.addEventListener('click', function () {
 
       toggleElements(itemTitleElement, elementsToToggle);
-    });
-
-
-                                  
-                                           });
+    
+                                                          });                                
                                           });
+                                         
+                                                          });
 
+
+                                                         
+
+                                    
+                                                       
+                                                         
