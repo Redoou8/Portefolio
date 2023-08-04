@@ -28,6 +28,7 @@
     --backGroundUrl: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
     --borderColor: #DC811A;
     --text-color2: #dad0c5;
+    
   }
 
   
@@ -52,7 +53,7 @@
     --backGroundUrl: url(RES/pexels-miguel-á-padriñán-19670.jpg);
     --borderColor: #2e2925;
     --text-color2: #3f3932;
-
+    --ppUrl: url(RES/trafalg.jpg);
 
 }
 
@@ -171,7 +172,7 @@ gap: 0;
     opacity: 0;
     transform: translateX(-300px);
     animation: apparition 1s 2s ease-out forwards;  
-    font-size: 2rem;
+    font-size: 4rem;
     padding-bottom: 3%;
     padding-top: 0;
     font-weight: bold;
@@ -282,7 +283,7 @@ gap: 0;
 	
 	
     width: 80%;
-    position: absolute;
+    position: relative;
     right: 10%;
     left: 10%;
     font-size: 1rem;
@@ -399,9 +400,9 @@ gap: 0;
    @media (orientation: portrait) {
     
    
-    h1{font-size: 9rem;}
+    h1{font-size: 9rem; justify-content: center; display: flex;}
     #job{font-size: 5rem;}
-    .itemTitle-1{font-size: 14rem;}
+    .itemTitle-1{font-size: 14rem; justify-content: center; align-items: center;}
     .darkLight{border-radius: 59%; height: 6dvw;}
     .darkLight:hover{width: 8dvw;
                     height: 7dvw;
@@ -414,9 +415,9 @@ gap: 0;
       flex-direction: column;
       align-items: center;
       display: flex;
-      height: max-content;
+      height: min-content;
       justify-content: center;
-      
+      row-gap: 5dvH;
       
       
 
@@ -424,19 +425,26 @@ gap: 0;
     
     .item{
     
+      row-gap: 4dvw;
+     column-gap: 0.5dvw;
       
-     
-      width: 80%;
       font-size: 3.5rem;
-
-
+     align-items: center;
+      justify-content: center;
     }
 
+   
+ #topTitle{
 
+    margin-bottom: 7dvh;;
+ }
 
+ .contact{
 
-
-
+  font-size: 2rem;
+  flex-direction: column;
+  row-gap: 5dvw;
+ }
 
 
 
