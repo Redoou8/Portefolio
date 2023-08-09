@@ -68,8 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const bodyElement = document.body;
     bodyElement.classList.toggle('body1');
     bodyElement.classList.toggle('body2');
-  
-  
+
+    const github = document.querySelectorAll('.git');
+    github.forEach(thumbnail => {
+      thumbnail.classList.toggle('git_1');
+      thumbnail.classList.toggle('git_0');
+    });
+    
   
   
   });

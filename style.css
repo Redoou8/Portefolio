@@ -1,6 +1,6 @@
  html{
   width: 100dvw;
-  height: 100dvh;
+  height: auto;
   margin: 0;
   padding: 0;
   font-size: 1dvw;
@@ -24,9 +24,9 @@
     
     background-attachment: fixed;
 
-    --text-color: linear-gradient(45deg, #833f00,#b36634, #833f00);
+    --text-color: linear-gradient(45deg, #924802,#b36634, #994b03);
     --backGroundUrl: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
-    --borderColor: #DC811A;
+    --borderColor: #b46a15;
     --text-color2: #dad0c5;
     
   }
@@ -57,9 +57,13 @@
 
 }
 
+.git_1{
+  filter: invert(1);
+}
 
-
-
+.git_0{
+  filter: blur(0.001);
+}
 
 
 
@@ -83,7 +87,7 @@ margin: 0;
 
 #topTitle {
    
-    row-gap: 1dvw;;
+    row-gap: 0.5dvw;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,9 +113,18 @@ gap: 0;
             
             margin: 0;
             padding: 0;
-            height: 3vh;
+            height: 3dvh;
             width: 3dvw;
     border: none;
+}
+
+.minia1{
+  margin: 0;
+            padding: 0;
+            height: 4dvw;
+            
+    border: none;
+
 }
 
 .MainSection {
@@ -119,9 +132,9 @@ gap: 0;
     position: relative;
     display: flex;
     flex-direction: row;
+   
     
-    
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     height: 60%;
    
@@ -266,11 +279,10 @@ gap: 0;
     column-gap: 5%;
  }
 
-.Pminia {
-
-    
+.Pminia {  
     position: relative;
-     width: 90%;
+     width: 7dvw;
+     height: 5dvw;
 }
 
 
@@ -284,8 +296,7 @@ gap: 0;
 	
     width: 80%;
     position: relative;
-    right: 10%;
-    left: 10%;
+    
     font-size: 1rem;
     color: var(--text-color2);
     bottom: 0;
@@ -304,26 +315,7 @@ gap: 0;
     padding-bottom: 0.3%;
   }
   
-  .contact1::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      border-radius: 4px;
-      
-      background-color: var(--borderColor);
-      
-      bottom: 0;
-      left: 0;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform .3s ease-in-out;
-    }
-  
-  .contact1:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
+ 
 
     .itemTitle-1::before{
         content: '';
@@ -350,7 +342,7 @@ gap: 0;
       .beforeMinia{
 
         position: relative;
-        height: 100%;
+        
         
       }
 
@@ -365,7 +357,7 @@ gap: 0;
     .beforeMinia:hover img {
         -webkit-filter: blur(0);
         filter: blur(0);
-       width: 100%;
+       
         
     }
 
@@ -399,10 +391,21 @@ gap: 0;
 
    @media (orientation: portrait) {
     
+
+    *{padding: 0; margin: 0;}
    
     h1{font-size: 9rem; justify-content: center; display: flex;}
     #job{font-size: 5rem;}
-    .itemTitle-1{font-size: 14rem; justify-content: center; align-items: center;}
+    .itemTitle-1{font-size: 14rem; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 0; 
+      margin: 0;
+    } 
+
+    body{
+          justify-content: space-between;}
+
     .darkLight{border-radius: 59%; height: 6dvw;}
     .darkLight:hover{width: 8dvw;
                     height: 7dvw;
@@ -427,7 +430,7 @@ gap: 0;
     
       row-gap: 4dvw;
      column-gap: 0.5dvw;
-      
+      width: 80%;
       font-size: 3.5rem;
      align-items: center;
       justify-content: center;
@@ -435,25 +438,26 @@ gap: 0;
 
    
  #topTitle{
-
-    margin-bottom: 7dvh;;
+    row-gap: 25px;
+    margin-bottom: 15%;
  }
 
  .contact{
 
   font-size: 2rem;
-  flex-direction: column;
-  row-gap: 5dvw;
+  flex-direction: row;
+  
+  
+
  }
 
 
+.Pminia{  
+    position: relative;
+     width: 20dvw;
+     height: 10dvw;
 
-
-
-
-
-
-
+}
 
 
 
