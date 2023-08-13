@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+html{margin: 0;
+  padding: 0;
+height:100dvh;
+width: 100dvw;
+}
+
+
+body{margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Caveat', cursive;
+   
+  }
+
+.container {  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+ 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;}
+  
+  
+  .ZONE2 { grid-area: 1 / 5 / 2 / 8; 
+         
+           text-align: center;
+           justify-content: center;
+            align-items: center;
+            font-size: calc(1vw + 1vh);
+           
+  }
+  
+  .ZONE3 { grid-area: 2 / 3 / 6 / 7; 
+           border: solid 0.4vh rgb(255, 255, 255);
+            
+            
+}
+  
+  .ZONE4 { grid-area: 4 / 1 / 5 / 3; 
+            border-radius: 46% 54% 81% 19% / 42% 62% 38% 58% ;
+            background-color: rgb(237, 242, 247);
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            font-size: calc(1vw + 1vh);
+            z-index: 10;
+           
+}
+  
+  .ZONE5 { grid-area: 5 / 1 / 9 / 4; 
+    border: solid 0.4vh white;
+    border-left: 0;       
+    border-bottom: 0;
+           
+}
+  
+.ZONE6 { grid-area: 2 / 7 / 7 / 8; 
+            
+  border: solid 0.4vh rgb(255, 255, 255);
+  border-right: 0;
+            
+}
+  
+  .ZONE7 { grid-area: 5 / 6 / 8 / 8; 
+           
+    border: solid 0.4vh rgb(248, 248, 248);
+    border-right: 0;   
+           
+}
+ 
+           
+  
+  .ZONE9 { grid-area: 6 / 4 / 9 / 8; 
+    border: solid 0.4vh rgb(255, 255, 255);
+    border-right: 0;
+    border-bottom: 0;
+            }
+  
+  .ZONE1 { grid-area: 1 / 1 / 5 / 4; 
+    border: solid 0.4vh rgb(255, 255, 255);
+    border-left: 0;
+    border-top: 0 ;
+}
+.ZONE0 { grid-area: 1 / 4 / 4 / 5;  
+
+  border: solid 0.4vh rgb(255, 255, 255);
+  border-top: 0;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+    
+    }
+
+
+
+    .ZONE1:hover,
+    .ZONE3:hover,
+    .ZONE5:hover,
+    .ZONE6:hover,
+    .ZONE7:hover,
+    .ZONE8:hover,
+    .ZONE9:hover {
+      z-index: 11;
+    }
+
+    
+      
+
+    
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+      
+      width: 100%;
+      height: 100%;
+      display: flex;
+        --swiper-pagination-color:rgb(197, 193, 193);
+        --swiper-pagination-bullet-inactive-color: #ffffff;
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-pagination-bullet-size: 6px;
+        --swiper-pagination-bullet-horizontal-gap: 6px;
+      
+    }
+
+    .focus{
+      
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      cursor: pointer;
+      overflow: hidden;
+        
+    }   
+
+
+
+
+    .focusimg{
+      
+      object-fit: contain; /* ou "cover" selon l'effet souhaité */
+      
+
+    }
+
+    .swiper-slide{
+      position: relative;
+      display: flex;
+      background: none;
+      
+
+    }
+
+    .ZONE2 , .ZONE4 {
+      border: none;
+     
+    }
+    .ZONE4{padding: 5%; }
+    
+    .ZONE2{ z-index: 0;
+    }
+
+    .nom:hover{
+        
+        display: flex;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        text-decoration: overline;
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .nom{
+      background-color: black;
+      display: flex;
+      padding: 0.7vw;
+      border-radius: 21% 79% 36% 64% / 57% 25% 75% 43% ;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    
+     
+    }
+
+    .nom:active{
+      text-decoration: underline;
+
+    }
+   
+
+
+
+    @media (orientation: portrait) {
+
+      body {
+        border: none;
+        background: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+      }
+
+      .container{
+        margin: 0;
+        padding: 0;
+        position: relative;
+          display: flex;
+          flex-direction: column-reverse;
+          row-gap: 3%;
+          justify-content: center;
+          align-items: center;
+         height: 400vh;
+         
+
+      }
+
+
+      .swiper {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: flex;
+        
+    
+        }
+        
+
+      
+      .verti{
+        margin: 0;
+        padding: 0%;
+      }
+
+      .focus{
+      
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        cursor: pointer;
+        
+          
+      }   
+      .focusimg{
+      
+        object-fit: cover; /* ou "cover" selon l'effet souhaité */
+        z-index: 1000;
+  
+      }
+
+      
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          height: auto;
+          width: 100vw;
+        }
+   
+      
+     
+
+      .swiper-slide{
+        padding: 0;
+        position: absolute;
+        display: flex;
+        background: none;
+        }
+  
+
+      .ZONE4, .ZONE2 {
+
+        font-size: 2vh;
+      }
+
+      
+
+      .nom:hover{
+        
+        display: flex;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        text-decoration: none;
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .nom{
+      background-color: black;
+      display: flex;
+      padding: 1%;
+      border-radius: 50%;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+    }
+
+    .nom:active{
+      text-decoration: none;
+
+    }
+
+
+
+
+
+
+    .ZONE2 { 
+         
+      text-align: center;
+      justify-content: center;
+       align-items: center;
+       font-size: calc(3vw + 3vh);
+       height: 15%;
+}
+
+
+
+.ZONE4 { 
+       border-radius: 46% 54% 81% 19% / 42% 62% 38% 58% ;
+       background-color: rgb(237, 242, 247);
+       height: 20%;
+       font-size: calc(2vw + 2vh);  
+        
+}
+
+
+.ZONE3, .ZONE5 , .ZONE6 , .ZONE7, .ZONE9 , .ZONE1, .ZONE0   { 
+      
+       display: flex;
+       border-bottom: 1vh solid black;
+}
+
+
+
+
+
+
+    }
