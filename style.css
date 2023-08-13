@@ -1,10 +1,12 @@
- html{
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+html{
   width: 100dvw;
   height: auto;
   margin: 0;
   padding: 0;
   font-size: 1dvw;
-
+  
  }
  
  .body1 {
@@ -20,8 +22,8 @@
     width: 100dvw;
     height: 100dvh;
     margin: 0;
-    font-family: 'Faustina', serif;
-    
+    font-family: 'Itim', cursive;
+   
     background-attachment: fixed;
 
     --text-color: linear-gradient(45deg, #924802,#b36634, #994b03);
@@ -45,7 +47,7 @@
     width: 100dvw;
     height: 100dvh;
     margin: 0;
-    font-family: 'Faustina', serif;
+    font-family: 'Itim', cursive;
     font-size: 1dvw;
 
 
@@ -132,7 +134,7 @@ gap: 0;
     position: relative;
     display: flex;
     flex-direction: row;
-   
+    margin-top: 3%;
     
     justify-content: space-evenly;
     
@@ -292,16 +294,17 @@ gap: 0;
 .contact{
     
     display: flex;
-	
+   
 	
     width: 80%;
-    position: relative;
+    position: absolute;
     
     font-size: 1rem;
     color: var(--text-color2);
-    bottom: 0;
+    top: 10%;
+    left: 1%;
    align-items: center;
-   justify-content: space-around;
+  gap: 2vw;
    background-image: var(--text-color);
    background-size: 100%;
    -webkit-background-clip: text;
@@ -315,6 +318,11 @@ gap: 0;
     padding-bottom: 0.3%;
   }
   
+  .contact1:hover{
+
+    transform: translateY(-10px);
+    filter: brightness(2);
+  }
  
 
     .itemTitle-1::before{
@@ -438,8 +446,11 @@ gap: 0;
 
    
  #topTitle{
+  position: relative;
+  display: flex;
     row-gap: 25px;
-    margin-bottom: 15%;
+   
+
  }
 
  .contact{
@@ -463,3 +474,5 @@ gap: 0;
 }
 
   }
+
+  
