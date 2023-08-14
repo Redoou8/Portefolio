@@ -81,7 +81,7 @@ html{
 
 
 h1{
-    font-family: 'Faustina', serif;
+    
     font-weight: bold;
 
 padding: 0;
@@ -106,7 +106,7 @@ margin: 0;
     transform: translateY(-100px);
     animation: apparition 0.4s 1s ease-out forwards; 
     
-    font-family: 'Faustina', serif;
+    
     
 
 }
@@ -543,7 +543,7 @@ gap: 0;
      padding-top: 5%;
       justify-content: center;
      
-      height: 60vh;
+      height: 60dvh;
       border-radius:116px / 70%;
       overflow: auto;
 
