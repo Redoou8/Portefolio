@@ -1,11 +1,12 @@
 
 function toggleElements(itemTitleElement, elementsToToggle) {
-  // If animation is in progress, return and ignore the click
+  //ignore the click if animation still on
   if (itemTitleElement.isAnimating) {
     return;
   }
 
-  // Toggle the visibility of the elements based on their current state
+  // Toggle the visibility of the elements
+
   if (itemTitleElement.visibleElements) {
     // If elements are visible, hide them one by one from the last to the first
     let delay = 0;
@@ -19,7 +20,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
           itemTitleElement.visibleElements = !itemTitleElement.visibleElements; // Toggle the visibility state for the next click
         }
       }, delay);
-      delay += 100; // Add 0.1 seconds delay for each element (adjust as needed)
+      delay += 10; // Add 0.1 seconds delay for each element (adjust as needed)
     }
   } else {
     // If elements are hidden, show them one by one in their original order
@@ -34,16 +35,10 @@ function toggleElements(itemTitleElement, elementsToToggle) {
           itemTitleElement.visibleElements = !itemTitleElement.visibleElements; // Toggle the visibility state for the next click
         }
       }, delay);
-      delay += 100; // Add 0.1 seconds delay for each element (adjust as needed)
+      delay += 10; // Add 0.1 seconds delay for each element (adjust as needed)
     });
   }
 }
-
-
-
-
-
-
 
 
 
@@ -51,18 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const itemTitles = document.querySelectorAll('.itemTitle-1');
      
-
   const darkLightButton = document.querySelector('.darkLight');
   let isDarkMode = false;
-
-
 
 
    darkLightButton.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
     const newBackgroundURL = isDarkMode ? 'RES/pexels-miguel-á-padriñán-19670.jpg' : 'RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg';
     darkLightButton.style.backgroundImage = `url(${newBackgroundURL})`;
-    
     
     // Toggle body class between body1 and body2
     const bodyElement = document.body;
@@ -74,9 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
       thumbnail.classList.toggle('git_1');
       thumbnail.classList.toggle('git_0');
     });
-    
-  
-  
   });
 
 
@@ -86,11 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     itemTitleElement.isAnimating = false;
     const elementsToToggle = Array.from(itemTitleElement.parentElement.children).slice(1);
      toggleElements(itemTitleElement, elementsToToggle);
-
-
-     
-
-
 
     itemTitleElement.addEventListener('click', function () {
 
