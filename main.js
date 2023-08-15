@@ -9,7 +9,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
 
   if (itemTitleElement.visibleElements) {
     // If elements are visible, hide them one by one from the last to the first
-    let delay = 0;
+    let delay = 10;
     itemTitleElement.isAnimating = true; // Set the flag to indicate animation is in progress
     for (let i = elementsToToggle.length - 1; i >= 0; i--) {
       setTimeout(() => {
@@ -20,11 +20,11 @@ function toggleElements(itemTitleElement, elementsToToggle) {
           itemTitleElement.visibleElements = !itemTitleElement.visibleElements; // Toggle the visibility state for the next click
         }
       }, delay);
-      delay += 10; // Add 0.1 seconds delay for each element (adjust as needed)
+      delay += 50; // Add 0.1 seconds delay for each element (adjust as needed)
     }
   } else {
     // If elements are hidden, show them one by one in their original order
-    let delay = 0;
+    let delay = 10;
     itemTitleElement.isAnimating = true; // Set the flag to indicate animation is in progress
     elementsToToggle.forEach((element, index) => {
       setTimeout(() => {
@@ -35,7 +35,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
           itemTitleElement.visibleElements = !itemTitleElement.visibleElements; // Toggle the visibility state for the next click
         }
       }, delay);
-      delay += 10; // Add 0.1 seconds delay for each element (adjust as needed)
+      delay += 50; // Add 0.1 seconds delay for each element (adjust as needed)
     });
   }
 }
