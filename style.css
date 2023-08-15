@@ -473,14 +473,14 @@ margin: 0;
       justify-content: space-around;
       height: 60dvh;
       overflow: auto;
-      margin-top: ;
+      
     }
     
     .item{
       position: relative;
       justify-self: center;
-     margin-bottom: 10%;
-      row-gap: 2vh;
+      margin-bottom: 3vh ;
+      row-gap: 1vh;
       width: 100%;
       font-size: 5rem;
     }
