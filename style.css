@@ -477,8 +477,8 @@ margin: 0;
       position: absolute;
       top: initial;
       right: initial;
-      left: 2%;    
-      bottom: 2%;
+      left: 2px;    
+      bottom: 2px;
       border-radius: 50%; 
       height:7vh;
       width:7vh;   
@@ -492,9 +492,6 @@ margin: 0;
       border: none;  
     }
 
-        
-   
-    
     .lines {
      
       height: 50vh;     
@@ -507,9 +504,9 @@ margin: 0;
     
     .item{
       position: relative;
-      justify-self: center;
+      
       margin-bottom: 5vh ;
-      row-gap: 1vh;
+      row-gap: 3vh;
       width: 100%;
       font-size: 5rem;
     }
@@ -581,8 +578,9 @@ margin: 0;
     justify-content: space-evenly;
     height: 70vh;
     overflow: auto;
-      margin-top: 0;
+    margin-top: 0;
     padding-top: 10%;
+     border-radius: 52% 48% 19% 19% / 49% 52% 48% 49%;;
   }
 
   
