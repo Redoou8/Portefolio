@@ -93,6 +93,11 @@ margin: 0;
  -moz-text-fill-color: transparent;
 }
 
+h5{
+  color: var(--stars-color);
+  
+}
+
 .starCont{
 
   transform: var(--for-line-direction);
@@ -157,7 +162,7 @@ gap: 0;
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 1%;
     justify-content: space-evenly;
     height: 100%;
    width: 100vw;
@@ -253,7 +258,10 @@ gap: 0;
   padding-top: 5%;
 }
 
+#profil{
+    row-gap: 0;
 
+}
 
 #Projets {
   overflow: hidden; /* Empêche le débordement des éléments masqués */
@@ -600,7 +608,10 @@ margin: 0;
    margin: 0 3vw; 
   }
   
-  
+  h5{
+    font-size: 3em;
+    text-align: center;
+  }
   
   .contact{
     position: absolute;
@@ -626,7 +637,8 @@ margin: 0;
     height: auto;
     max-height: 70vh;
     overflow: auto;
-    padding-top: 10%;
+    margin-top: 20%;
+
   }
 
   
