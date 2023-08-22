@@ -3,11 +3,11 @@
 
 
 html{
-  width: 100dvw;
-  height: auto;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
-  font-size: 1vw ; 
+  font-size: 1vw; 
 }
  
  .body1 {
@@ -15,7 +15,7 @@ html{
     min-height: 100%;
     position: relative;
   background-attachment: fixed;
-    background-image: var(--backGroundUrl);
+    background-image: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -25,7 +25,7 @@ html{
     font-family: 'Itim', cursive;
     background-attachment: fixed;
     --text-color: linear-gradient(180deg, #8d490a,#b36634, #c28750);
-    --backGroundUrl: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+   
     --borderColor: #b46a15;
     --text-color2: #dad0c5;
     --stars-color: white;
@@ -33,7 +33,7 @@ html{
     z-index: 0;
     --for-line-direction: rotate(0);
     --height-line-container:  50vh;
-    --height-star: 3vh;
+    --height-star: 0.2vh;
   }
 
   
@@ -41,31 +41,40 @@ html{
     min-height: 100%;
     position: relative;
     background-attachment: fixed; 
-    background-image: var(--backGroundUrl);
+    background-image: url(RES/pexels-miguel-á-padriñán-19670.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: 100dvw;
-    height: 100dvh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     font-family: 'Itim', cursive;
     z-index: 0;
     --text-color: linear-gradient(45deg, #141413, #020101,#b9aea7 );
-    --backGroundUrl: url(RES/pexels-miguel-á-padriñán-19670.jpg);
     --borderColor: #2e2925;
     --text-color2: #3f3932;
     --stars-color: rgba(0, 0, 0, 0);
     --jobTitle : linear-gradient(180deg, #1f2022, #5e5c5c,  #b1abab);
-    --ppUrl: url(RES/trafalg.jpg);
-    --for-line-direction: rotate(90deg);
-    --height-line-container:  100vw;
+    --DarkLUrl: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+    --for-line-direction: rotate(0deg);
+    --height-line-container:  0vw;
     --height-star: 6vh;
 }
 
-.git_1{
-  filter: invert(1);
+.cloned-image {
+  width: 100%;
+  height: 100%;
+  background-image: var(--DarkLUrl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1); /* Inverse horizontalement */
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
+
 
 .forIndex{  
   z-index: 10;
@@ -105,8 +114,13 @@ margin: 0;
 display: flex;
 margin: 0;
 padding: 0;
-width: 3dvw;
+
 gap: 0;
+}
+
+.ppID{
+ height: 50%;
+  width: 50%;
 }
 
 .minia {
@@ -115,7 +129,16 @@ gap: 0;
             height: 3dvh;
             width: 3dvw;
             border: none;
+            align-items: center;
+          
+            
 }
+
+
+.git_1{
+  filter: invert(1);
+}
+
 
 .minia1{
            margin: 0;
@@ -124,15 +147,21 @@ gap: 0;
            border: none;
 }
 
+.minia1:active{
+  height: 5dvw;
+}
+
+
 .MainSection {
   
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+    margin-top: 5%;
     justify-content: space-evenly;
-    height: 60%;
+    height: 100%;
    width: 100vw;
+   
 }
 
 
@@ -160,15 +189,6 @@ gap: 0;
   }
 
 
-.it1-1{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    align-items: center;
-    column-gap: 10%;
-    text-align: center;
-}
 
 #Competences{
   row-gap: 1.4vw;
@@ -188,35 +208,63 @@ gap: 0;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    
 }
-
-.pp{
-    position: relative;
-    display: flex;
-    width: 4dvw;
-    border: var(--text-color2) solid 0.05dvw;
-    border-radius: 4%;
-  }
-
 
 .item{
-    position: relative;
-    display :flex;
-    flex-direction: column;
-    background: none; 
-    align-items: center;
-    border: none;
-   row-gap: 2vw;
-    color:var(--text-color2);
-    padding: 0px;
-    margin: 0px;
-    width: 20%;
-    height: fit-content;
-    font-size: 1.2rem;       
+  position: relative;
+  display :flex;
+  flex-direction: column;
+  background: none; 
+  align-items: center;
+  border: none;
+  row-gap: 1.2vw;
+  color:var(--text-color2);
+  padding: 0px;
+  margin: 0px;
+  width: 20%;
+  height: fit-content;
+  font-size: 1rem;       
 }
 
-#Projets{
-  row-gap: 3vh;
+.it1-1{
+  position: relative;
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      padding-top: 6% ;
+}
+
+
+.it1-1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  border-top: 2px solid var(--text-color2);
+  top: 0;
+  padding-top: 5%;
+}
+
+
+
+#Projets {
+  overflow: hidden; /* Empêche le débordement des éléments masqués */
+  transition: height 0.5s ease-in-out; /* Ajoute une transition en douceur pour la hauteur */
+  font-size: 0.8em;
+  row-gap: 1.2vw;
+}
+
+#Projets .itemHidden {
+  height: 0; /* Réduit la hauteur de la section lorsque les éléments sont masqués */
+  padding: 0; /* Supprime le padding lorsque les éléments sont masqués */
 }
 
 @keyframes apparition {
@@ -249,32 +297,26 @@ gap: 0;
 
 .Pminia {  
     position: relative;
-     width: 7dvw;
-     height: 5dvw;
+     width: 5dvw;
+     height: 4dvw;
 }
 
-.contact-container{
-  z-index: 100;
-}
+
 
 .contact{
-    position: absolute;
-    display: flex;
-    width: 80%;
-    font-size: 2rem;
-    flex-direction: row;
-     z-index: 50;
-    color: var(--text-color2);
-    top: 2%;
-    left: 1%;
-   align-items: center;
-   gap: 2vw;
-   background-image: var(--text-color);
-   background-size: 100%;
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   -webkit-text-fill-color: transparent; 
-   -moz-text-fill-color: transparent;
+  position: absolute;
+  display: flex;
+  z-index: 50;
+  top: 1%;
+  left: 1%;
+  color: var(--text-color2);
+  gap: 2vw;
+  background-image: var(--text-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   }
 
   .contact1 {
@@ -283,14 +325,16 @@ gap: 0;
   }
   
   .contact1:hover img{
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
+
+  
 
     .itemTitle-1::before{
       content: '';
       position: absolute;
       width: 100%;
-      height: 5px;
+      height: 0.05em;
       border-radius: 4px;
       background-color: var(--borderColor);
       bottom: 0;
@@ -326,21 +370,28 @@ gap: 0;
 
     .darkLight{
       position: absolute;
-      top: 1%;
-      right: 1%;
-      background-image: url(RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+      display: block;
+      top: 10px;
+      right: 10px;
+      padding-top: 1%;
+      padding-right: 1%;
+      background-image: url(RES/pexels-miguel-á-padriñán-19670.jpg);
       width: 4dvw;
       height: 4dvw;
       background-size: cover;
       background-repeat: no-repeat;
-      border: none;
       border-radius: 5%;
-
+      border: 0;
     }
 
     .darkLight:hover{
-      
+      transform: rotate(10deg);
       border: none;
+    }
+    .darkLight:active{
+      width: 5vw;
+      height: 5vw;
+
     }
 
    
@@ -426,14 +477,24 @@ gap: 0;
         top: 110%;
       }
     }
-    
 
+    .tools{
+      padding-top: 0;
+    }
+    
+ .tools::after{
+   border: 0;
+   padding: 0;
+ }
 
     #colChange{
 padding: 0;
 margin: 0;
 
     }
+
+
+
 
 /* RESPONSIVE PORTRAIT */
 
@@ -477,8 +538,8 @@ margin: 0;
       position: absolute;
       top: initial;
       right: initial;
-      left: 2px;    
-      bottom: 2px;
+      left: 1%;    
+      bottom: 1%;
       border-radius: 50%; 
       height:7vh;
       width:7vh;   
@@ -511,8 +572,6 @@ margin: 0;
       font-size: 5rem;
     }
 
-
-
    
  #topTitle{
   position: relative;
@@ -535,52 +594,46 @@ margin: 0;
 .minia{
            height: 7dvh;
             width: 7dvw;
-
-
 }
 
   .contact1{
    margin: 0 3vw; 
   }
   
-  .contact-container {
-    position: fixed;
-    display: flex;
-    margin: 0% 25%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--text-color2);
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-    background-image: var(--text-color);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-  }
+  
   
   .contact{
-      margin: 0;
-      padding: 0;
-     bottom: 0;
-     height: 100%;
+    position: absolute;
+    display: flex;
+    top: inherit;
+    left: inherit;
+    bottom: 2%;
+    left: 30%;
+    height: fit-content;
   }
 
+  #Projets {
+   
+    font-size: 4em;
+  }
   
   .MainSection {
     position: relative;
-   display: block;
-   align-items: center;
+    display: block;
+    align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    height: 70vh;
+    height: auto;
+    max-height: 70vh;
     overflow: auto;
-    margin-top: 0;
     padding-top: 10%;
-     border-radius: 52% 48% 19% 19% / 49% 52% 48% 49%;;
+  }
+
+  
+    .forIndex {
+    z-index: 10;
+   
+    height: 100%;
   }
 
   

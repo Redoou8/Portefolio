@@ -14,6 +14,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
     for (let i = elementsToToggle.length - 1; i >= 0; i--) {
       setTimeout(() => {
         elementsToToggle[i].classList.add('itemHidden');
+        elementsToToggle[i].style.visibility = 'hidden'; // Hide the element using visibility
         // Check if this is the last element to be hidden
         if (i === 0) {
           itemTitleElement.isAnimating = false; // Set the flag to indicate animation is complete
@@ -29,6 +30,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
     elementsToToggle.forEach((element, index) => {
       setTimeout(() => {
         element.classList.remove('itemHidden');
+        element.style.visibility = 'visible'; // Show the element using visibility
         // Check if this is the last element to be shown
         if (index === elementsToToggle.length - 1) {
           itemTitleElement.isAnimating = false; // Set the flag to indicate animation is complete
@@ -42,6 +44,7 @@ function toggleElements(itemTitleElement, elementsToToggle) {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const itemTitles = document.querySelectorAll('.itemTitle-1');
@@ -52,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    darkLightButton.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
-    const newBackgroundURL = isDarkMode ? 'RES/pexels-miguel-á-padriñán-19670.jpg' : 'RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg';
+    const newBackgroundURL = isDarkMode ? 'RES/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg' : 'RES/pexels-miguel-á-padriñán-19670.jpg';
     darkLightButton.style.backgroundImage = `url(${newBackgroundURL})`;
     
     // Toggle body class between body1 and body2
@@ -79,14 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       toggleElements(itemTitleElement, elementsToToggle);
     
-                                                          });                                
-                                          });
-                                         
-                                                          });
+        });                                
+        });
+      });
 
 
-                                                         
+      
 
-                                    
-                                                       
                                                          
